@@ -11,16 +11,16 @@ function displayAbbreviations() {
         var definition = abbreviations[i].getAttribute("title");
         var key = abbreviations[i].lastChild.nodeValue;
         defs[key] = definition;
-    }
+    }*/
     for( var i=0; i<abbreviations.length; i++) {
         var current_abbr = abbreviations[i];
-        var key = current_abbr.getAttribute("title");
+        var definition = current_abbr.getAttribute("title");
         var key = current_abbr.lastChild.nodeValue;
         defs[key] = definition;
-    }*/
-    for ( var i=0; i<abbreviations.length; i++) {
-        defs[abbreviations[i].lastChild.nodeValue] = abbreviations[i].getAttribute("title");
     }
+    /*for ( var i=0; i<abbreviations.length; i++) {
+        defs[abbreviations[i].lastChild.nodeValue] = abbreviations[i].getAttribute("title");
+    }*/
     //创建定义列表
     var dlist = document.createElement("dl");
     //遍历定义
