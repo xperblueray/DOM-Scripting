@@ -24,6 +24,5 @@
     <script type="text/javascript" src="scripts/addLoadEvent.js"></script>
     <script type="text/javascript" src="scripts/displayAbbreviations.js"></script>
     <script type="text/javascript" src="scripts/displayCitations.js"></script>
-    <script type="text/javascript" src="scripts/displayAccesskeys.js"></script>
 </body>
 </html>

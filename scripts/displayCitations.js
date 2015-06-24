@@ -14,14 +14,14 @@ function displayCitations() {
     //如果没有元素节点，继续循环
         if(quoteChildren.length < 1) continue;
     //获取引用中的最后一个节点
-        var elem = quoteChildran[quoteChildren.length-1];
+        var elem = quoteChildren[quoteChildren.length-1];
     //创建标记
         var link = document.createElement("a");
         var link_text = document.createTextNode("source");
         link.appendChild(link_text);
         link.setAttribute("href",url);
         var superscript = document.createElement("sup");
-        superscript.appencChild(link);
+        superscript.appendChild(link);
         elem.appendChild(superscript);
     }
 }
