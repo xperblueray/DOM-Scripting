@@ -1,4 +1,4 @@
-function displayAccessKeys() {
+function displayAccesskeys() {
     if(!document.getElementsByTagName || !document.createElement || !document.createTextNode) return false;
     var links = document.getElementsByTagName("a");
     var akeys = new Array();
@@ -15,11 +15,11 @@ function displayAccessKeys() {
         var str = key + ": "+text;
         var item = document.createElement("li");
         var item_text = document.createTextNode(str);
-        item.appendChild(item_text;)
+        item.appendChild(item_text);
         list.appendChild(item);
     }
     var header = document.createElement("h3");
-    var header_text = document.createTextNode(str);
+    var header_text = document.createTextNode("AccessKeys");
     header.appendChild(header_text);
     document.body.appendChild(header);
     document.body.appendChild(list);
