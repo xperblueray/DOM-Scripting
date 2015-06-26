@@ -16,3 +16,24 @@ function stripeTables() {
     }
 }
 addLoadEvent(stripeTables);
+
+/*
+function stripeTables() {
+    if (!document.getElementsByTagName) return false;
+    var tables = document.getElementsByTagName("table");
+    var rows, odd;
+    for (var i=0; i<tables.length; i++) {
+        odd = false;
+        rows = tables.getElementsByTagName("tr");
+        for ( var j=0; j<rows.length; j++) {
+            if (odd == true) {
+                addClass(rows[i],"odd");
+                odd = false;
+            } else {
+                odd = true; 
+            }
+        }
+    }
+}
+
+*/
