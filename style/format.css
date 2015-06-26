@@ -23,6 +23,8 @@ th {
 }
 th,td {
     width: 10em;
-    padding: .em;
+    padding: .5em;
 }
-
+/*tr:hover{
+    font-weight: bold;
+}*/
