@@ -3,6 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Web Design</title>
+    <link href="style/layout.css" rel="stylesheet" media="screen" />
 </head>
 <body>
 <h1>Web Design</h1>
@@ -12,6 +13,11 @@
     <li><a href="presentation.html">Presentation</a></li>
     <li><a href="behavior.html">Behavior</a></li>
 </ol>
-<img src="images/topics.gif" alt="building blocks of web design" id="preview"/>
+<div id="slideshow">
+    <img src="images/topics.gif" alt="building blocks of web design" id="preview"/>
+</div>
+<script type="text/javascript" src="scripts/addLoadEvent.js"></script>
+<script type="text/javascript" src="scripts/moveElementOnly.js"></script>
+<script type="text/javascript" src="scripts/prepareSlideshow.js"></script>
 </body>
 </html>
